@@ -3,9 +3,9 @@ import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { GripVertical, Edit2, Trash2, Plus, GripHorizontal } from 'lucide-react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import api from '../../../services/api';
+import api from '../../services/api';
 import toast from 'react-hot-toast';
-import { formatCLP } from '../../../utils/formatCLP';
+import { formatCLP } from '../../utils/formatCLP';
 
 const CategoryAccordion = ({ category, onEditItem }) => {
   const [isOpen, setIsOpen] = useState(true);

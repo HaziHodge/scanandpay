@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import api from '../../../services/api';
-import { formatCLP } from '../../../utils/formatCLP';
+import api from '../../services/api';
+import { formatCLP } from '../../utils/formatCLP';
 import { X, ExternalLink, AlertTriangle } from 'lucide-react';
 
 const NEXT_ACTION = {

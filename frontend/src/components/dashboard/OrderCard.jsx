@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatCLP } from '../../../utils/formatCLP';
+import { formatCLP } from '../../utils/formatCLP';
 import { Clock } from 'lucide-react';
 
 const STATUS_CONFIG = {

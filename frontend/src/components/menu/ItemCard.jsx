@@ -1,6 +1,6 @@
 import React from 'react';
-import { formatCLP } from '../../../utils/formatCLP';
-import { useCartStore } from '../../../store/cartStore';
+import { formatCLP } from '../../utils/formatCLP';
+import { useCartStore } from '../../store/cartStore';
 import { Plus, Minus } from 'lucide-react';
 
 const ItemCard = ({ item }) => {

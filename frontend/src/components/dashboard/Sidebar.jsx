@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuthStore } from '../../../store/authStore';
+import useAuthStore from '../../store/authStore';
 import { LayoutDashboard, Menu as MenuIcon, QrCode, TrendingUp, LogOut, X } from 'lucide-react';
 
 const Sidebar = () => {

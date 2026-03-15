@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useCartStore } from '../../../store/cartStore';
-import { formatCLP } from '../../../utils/formatCLP';
+import { useCartStore } from '../../store/cartStore';
+import { formatCLP } from '../../utils/formatCLP';
 import { Minus, Plus, Trash2, X } from 'lucide-react';
-import api from '../../../services/api';
+import api from '../../services/api';
 import toast from 'react-hot-toast';
 
 const CartDrawer = ({ venueSlug, tableId, onClose }) => {

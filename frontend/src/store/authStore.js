@@ -1,17 +1,18 @@
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { create } from 'zustand'
 
-export const useAuthStore = create(
-  persist(
-    (set) => ({
-      token: null,
-      venue: null,
-      isAuthenticated: false,
-      login: (token, venue) => set({ token, venue, isAuthenticated: true }),
-      logout: () => set({ token: null, venue: null, isAuthenticated: false }),
-    }),
-    {
-      name: 'scanpay-auth-storage',
-    }
-  )
-);
+const useAuthStore = create((set) => ({
+  token: localStorage.getItem('token') || null,
+  venue: JSON.parse(localStorage.getItem('venue') || 'null'),
+  setAuth: (token, venue) => {
+    localStorage.setItem('token', token)
+    localStorage.setItem('venue', JSON.stringify(venue))
+    set({ token, venue })
+  },
+  logout: () => {
+    localStorage.removeItem('token')
+    localStorage.removeItem('venue')
+    set({ token: null, venue: null })
+  }
+}))
+
+export default useAuthStore

@@ -7,6 +7,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "axios": "*",
     "bcrypt": "*",
     "cors": "*",
     "dotenv": "*",

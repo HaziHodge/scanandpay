@@ -1,0 +1,22 @@
+{
+  "name": "scan-and-pay-backend",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "*",
+    "cors": "*",
+    "dotenv": "*",
+    "express": "*",
+    "express-validator": "*",
+    "helmet": "*",
+    "jsonwebtoken": "*",
+    "nodemon": "*",
+    "pg": "*",
+    "qrcode": "*",
+    "socket.io": "*"
+  }
+}
